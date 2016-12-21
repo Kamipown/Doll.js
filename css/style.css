@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400");
+@import url("https://fonts.googleapis.com/css?family=Oswald:400");
+
+* { box-sizing: border-box; vertical-align: top; margin: 0px; padding: 0px; outline: none;}
+html { height: 100%;}
+body { height: 100%; font-size: 0px; font-family: "Roboto"; background-color: #222; color: #fff; opacity: 1; transition: opacity 250ms ease;}
+input { font-family: "Roboto";}
+h1, h2, h3, h4, h5, h6 { font-weight: 400;}
+a { text-decoration: none;}
+
+#app_loader { display: block; position: absolute; z-index: 1000; top: 50%; left: 50%; transform: translate3d(-50%, -50%, 0); background-color: #333; border-radius: 4px; box-shadow: 0px 0px 4px #000; opacity: 0; transition: opacity 250ms ease;}
+#app_loader:hover { opacity: 1;}
+	#app_loader > h1 { display: block; line-height: 32px; margin: 10px 10px 5px 10px; font-family: "Oswald"; font-size: 24px; text-align: center;}
+		#app_loader > h1 > span { font-size: 32px; color: #2ecc71;}
+	#app_loader > .progress_bar { display: block; margin: 5px 10px 10px 10px; width: calc(100% - 20px); height: 4px; border-radius: 2px; background-color: #111; overflow: hidden;}
+		#app_loader > .progress_bar > .progress { display: block; width: 0%; height: 4px; background-color: #2ecc71;}
+
+/* template */
+.template { opacity: 0; transition: opacity 250ms ease;}
+
+#template_header { display: block; width: 100%; height: 40px; border-bottom: 1px solid #000; background-color: #333;}
+	#template_header > h1 { display: inline-block; width: 199px; height: 40px; line-height: 40px; padding: 0px 10px; font-family: "Oswald"; font-size: 16px;}
+		#template_header > h1 > span { font-size: 24px; color: #2ecc71;}
+	#template_header > nav { display: inline-block; height: 40px; border-left: 1px solid #000;}
+		#template_header > nav > input { display: inline-block; height: 39px; line-height: 39px; padding: 0px 10px; border: none; border-right: 1px solid #000; background-color: transparent; color: #fff; font-size: 14px; cursor: pointer; transition: all 250ms ease;}
+		#template_header > nav > input:hover { background-color: #2a2a2a;}
+
+#template_hierarchy { display: inline-block; width: 200px; height: calc(100% - 240px); border-right: 1px solid #000; background-color: #333;}
+
+#template_main { display: inline-block; width: calc(100% - 400px); height: calc(100% - 240px);}
+
+#template_inspector { display: inline-block; width: 200px; height: calc(100% - 240px); border-left: 1px solid #000; background-color: #333;}
+
+#template_timeline { display: block; width: 100%; height: 200px; border-top: 1px solid #000; background-color: #333;}
+
+/* popup */
+.popup { display: block; position: absolute; z-index: 1000; top: 80px; left: 50%; transform: translate3d(-50%, 0, 0); background-color: #333; border-radius: 4px; box-shadow: 0px 0px 4px #000; opacity: 0; transition: opacity 250ms ease;}
+	.popup > header { display: block; height: 21px; border-bottom: 1px solid #000;}
+		.popup > header > h2 { display: inline-block; width: calc(100% - 21px); height: 20px; line-height: 20px; padding: 0px 4px; font-size: 14px;}
+		.popup > header > input { display: inline-block; width: 21px; height: 20px; line-height: 16px; border: none; border-left: 1px solid #000; background-color: #c55; color: #fff; text-align: center; cursor: pointer;}
+	.popup > .content { padding: 10px;}
+
+#import_popup {}
+	#import_popup > .content {}
+		#import_popup > .content > .browse_div { display: block; position: relative; min-width: 200px; border-radius: 4px; background-color: #2ecc71;}
+			#import_popup > .content > .browse_div > p { display: block; padding: 10px; font-size: 14px; text-shadow: 1px 1px 1px #000; text-align: center;}
+			#import_popup > .content > .browse_div > input { display: block; position: absolute; top: 0; left: 0; z-index: 2; width: 100%; height: 100%; opacity: 0; cursor: pointer;}
+		#import_popup > .content > .preview { margin-top: 10px; border: 1px solid #000;}
