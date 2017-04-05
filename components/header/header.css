@@ -1,0 +1,5 @@
+#header { height: 32px; border-bottom: 1px solid #111; background-color: #34495e;}
+	#header > a { display: inline-block; padding: 0px 4px;}
+		#header > a > h1 { width: 256px; height: 32px; line-height: 32px; font-size: 20px; color: #fff;}
+			#header > a > h1 > span { display: inline-block; height: 32px; line-height: 32px; padding: 0px 16px; font-size: 14px; color: #fff; opacity: 0; transition: opacity 250ms ease;}
+			#header > a:hover > h1 > span { opacity: 1;}
