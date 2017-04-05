@@ -16,3 +16,15 @@ var app = angular.module("app", []);
 // 		}
 // 	}
 // }
+
+app.controller('app_ctrl', function($scope)
+{
+	$scope.doll_parts =
+	[
+		{"id": 0, "name": "head"},
+		{"id": 1, "name": "chest"},
+		{"id": 2, "name": "left_arm"}
+	];
+	
+	$scope.selected_doll = null;
+});

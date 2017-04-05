@@ -2,3 +2,7 @@
 	<span>+</span>
 	<input type="file" accept="image/jpeg, image/png, image/svg" multiple="true"/>
 </div>
+
+<article class="chip" ng-repeat="doll_part in $parent.doll_parts" ng-click="click_chip($event)">
+	{{doll_part.name}}
+</article>

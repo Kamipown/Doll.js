@@ -15,7 +15,7 @@
 		<link rel="stylesheet" type="text/css" href="components/timeline/timeline.css"/>
 		<title>Doll Animator</title>
 	</head>
-	<body ng-app="app">
+	<body ng-app="app" ng-controller="app_ctrl">
 		<header id="header" ng-include="'components/header/header.html'"></header>
 		<aside id="hierarchy" ng-include="'components/hierarchy/hierarchy.html'" ng-controller="hierarchy_ctrl" onload="loaded();"></aside>
 		<main id="scene" ng-include="'components/scene/scene.html'"></main>
