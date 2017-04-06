@@ -8,3 +8,5 @@ input { font-family: "Roboto";}
 h1 { font-weight: 400; font-family: "Oswald";}
 h2, h3, h4, h5, h6 { font-weight: 400;}
 a { text-decoration: none;}
+
+.no_select { -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;}

@@ -1,1 +1,4 @@
-<p>lol</p>
+<div class="doll_chip" ng-repeat="doll_part in $parent.doll_parts">
+	<img ng-src="{{doll_part.src}}"/>
+	<div class="draggable" ng-class="{selected: doll_part.selected}"></div>
+</div>

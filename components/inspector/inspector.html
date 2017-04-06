@@ -1,3 +1,6 @@
-<div class="content">
-	<input ng-model="$parent.app_test" type="text"/>
+<div class="content" ng-if="$parent.selected_doll">
+	<section>
+		<input ng-model="$parent.selected_doll.name" type="text" onclick="this.select();"/>
+	</section>
+		
 </div>
