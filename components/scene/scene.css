@@ -2,4 +2,4 @@
 	#scene > .doll_chip { display: inline-block; position: relative; top: 20px; width: 200px;}
 		#scene > .doll_chip > img { position: relative; z-index: 1; width: 100%;}
 		#scene > .doll_chip > .draggable { display: block; position: absolute; z-index: 2; top: 0; left: 0; width: 100%; height: 100%; cursor: pointer;}
-		#scene > .doll_chip > .draggable.selected { border: 2px dashed #c55;}
+		#scene > .doll_chip > .draggable.selected { border: 1px solid rgba(0, 255, 0, 0.8);}
